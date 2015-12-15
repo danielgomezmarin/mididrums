@@ -1,0 +1,18 @@
+order, 2;
+step, 13;
+aaca, aa 0.5 ba 0.1875 ca 0.25 ea 0.0625;
+aada, aa 1;
+aaea, aa 1;
+aaec, aa 1;
+aaga, aa 0.8 ca 0.2;
+aaha, aa 1;
+aaka, aa 1;
+caca, aa 0.4 ba 0.6;
+caga, aa 0.25 ba 0.75;
+eaca, fa 1;
+eaec, aa 1;
+eaga, aa 0.5 fa 0.5;
+faga, aa 1;
+gaga, ba 1;
+gaha, aa 1;
+haga, aa 1;

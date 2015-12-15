@@ -1,0 +1,14 @@
+order, 6;
+step, 23;
+aabaaacaaaaa, aa 1;
+aabaaacaaaca, ca 1;
+aabaaacaaaea, ba 1;
+aabaaacacaba, ba 1;
+aabaaagacaea, ba 1;
+aacaaacacaaa, ca 1;
+aadaaadaaada, aa 1;
+aafaaagaaaea, aa 0.5 ca 0.5;
+aafaaagacaea, ca 1;
+aagaaacacaaa, ca 1;
+baaaaacaaaaa, ca 1;
+babaaacacaaa, ba 1;

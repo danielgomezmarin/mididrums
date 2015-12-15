@@ -1,0 +1,13 @@
+order, 3;
+step, 26;
+aabaaa, ea 1;
+aabbaa, ea 1;
+aacaca, aa 1;
+aadaaa, ca 1;
+aafaaa, aa 0.571429 ea 0.428571;
+aagaaa, fa 1;
+bafaaa, aa 1;
+eanaaa, fa 0.666667 na 0.333333;
+ganaaa, fa 0.5 na 0.5;
+janaaa, aa 1;
+mafaaa, fa 1;

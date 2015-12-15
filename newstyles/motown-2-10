@@ -1,0 +1,6 @@
+order, 2;
+step, 10;
+eaaa, aa 1;
+faaa, aa 0.25 ea 0.583333 fa 0.166667;
+gaaa, ea 1;
+naaa, aa 0.142857 fa 0.428571 na 0.428571;

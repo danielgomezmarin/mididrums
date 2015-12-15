@@ -1,0 +1,18 @@
+order, 3;
+step, 3;
+aaaaea, aa 1;
+baaaaa, aa 1;
+baaaba, aa 1;
+bacaaa, aa 1;
+bacada, aa 1;
+eacafa, aa 1;
+faaaaa, aa 0.333333 ea 0.666667;
+faaaea, aa 0.684211 ba 0.157895 ca 0.0263158 ea 0.131579;
+faaafa, aa 1;
+facaea, ba 0.666667 ea 0.333333;
+facaga, aa 1;
+faeaaa, ea 1;
+fagaea, fa 1;
+fagafa, fa 1;
+hacaea, ba 0.5 ea 0.5;
+hacaga, aa 1;

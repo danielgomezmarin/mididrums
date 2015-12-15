@@ -1,0 +1,43 @@
+#N canvas 216 194 553 465 10;
+#X msg 72 94 32;
+#X obj 71 134 until;
+#X obj 71 156 f;
+#X obj 98 155 + 1;
+#X obj 72 114 t f b;
+#X msg 109 134 0;
+#X obj 50 304 list prepend;
+#X obj 70 177 t f f;
+#X obj 50 323 list prepend line;
+#X obj 50 343 list trim;
+#X msg 178 157 merge \$1 \$2;
+#X msg 25 84 clear;
+#X obj 26 46 inlet;
+#X obj 26 65 route reset dump;
+#X obj 50 365 outlet;
+#X obj 50 253 coll \$1-patterns;
+#C restore;
+#X text 184 15 save as many patterns of 32 steps as you like in a coll
+object. input index and dictionary description of the event as a list
+ans it will be saved on the desired index. Input |reset( and the coll
+would be reset. Input |dump( and the 32 patterns would be output with
+a prefix "list";
+#X connect 0 0 4 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 0 7 0;
+#X connect 3 0 2 1;
+#X connect 4 0 1 0;
+#X connect 4 1 5 0;
+#X connect 5 0 2 1;
+#X connect 6 0 8 0;
+#X connect 7 0 15 0;
+#X connect 7 1 6 1;
+#X connect 8 0 9 0;
+#X connect 9 0 14 0;
+#X connect 10 0 15 0;
+#X connect 11 0 15 0;
+#X connect 12 0 13 0;
+#X connect 13 0 11 0;
+#X connect 13 1 0 0;
+#X connect 13 2 10 0;
+#X connect 15 0 6 0;

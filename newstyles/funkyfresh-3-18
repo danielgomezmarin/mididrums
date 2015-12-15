@@ -1,0 +1,25 @@
+order, 4;
+step, 18;
+aabaaa, aa 0.142857 ea 0.857143;
+aaeaca, ca 1;
+aafaaa, aa 0.176471 da 0.0588235 ea 0.705882 fa 0.0588235;
+aafaba, ea 1;
+babaaa, aa 0.166667 ba 0.111111 ca 0.0555556 ea 0.5 fa 0.111111 ia 0.0555556
+;
+bababa, aa 0.5 ea 0.5;
+babaea, ba 1;
+baeaaa, ca 1;
+baeaba, aa 0.285714 ba 0.285714 ca 0.428571;
+bafaaa, aa 0.0833333 ba 0.0833333 ea 0.416667 fa 0.416667;
+bafaba, ca 0.5 ea 0.5;
+bafaea, ba 0.333333 fa 0.666667;
+bajaaa, ba 0.333333 ea 0.666667;
+bajaba, ca 1;
+bajaea, ea 1;
+caeaaa, ca 1;
+eabaaa, ea 1;
+eaeaaa, ea 1;
+eafaaa, ea 1;
+fafaaa, ea 1;
+fafaea, fa 1;
+jafaea, fa 1;

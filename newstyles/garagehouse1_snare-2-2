@@ -1,0 +1,15 @@
+order, 3;
+step, 2;
+aaaa, ia 1;
+baaa, ea 0.3125 ia 0.4375 ka 0.0625 ma 0.1875;
+baea, ea 0.2 ia 0.8;
+baia, ia 0.5 ja 0.5;
+faaa, ia 1;
+faea, ea 0.142857 ia 0.714286 ma 0.142857;
+faia, ia 1;
+fama, ma 1;
+iaea, ia 1;
+jaaa, ea 0.25 ia 0.75;
+jaea, ia 1;
+jaia, ia 1;
+naaa, ia 1;

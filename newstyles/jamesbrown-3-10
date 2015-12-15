@@ -1,0 +1,9 @@
+order, 3;
+step, 10;
+aacaaa, aa 1;
+aaeaaa, ba 0.833333 fa 0.166667;
+aagaaa, ba 1;
+baaaaa, ba 1;
+baeaaa, ba 1;
+caaaaa, ba 1;
+caeaaa, ea 0.5 fa 0.5;

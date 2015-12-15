@@ -1,0 +1,13 @@
+order, 6;
+step, 9;
+aaabaaaaaaaa, aa 1;
+aaabaaiaaaba, aa 1;
+aacbaaaaaaba, aa 1;
+aacbaaiaaaba, aa 1;
+aaebaaeaaaea, aa 1;
+aafbaaeaaafa, aa 1;
+aagbaaeaaafa, aa 1;
+aakbaaiaaaja, aa 1;
+eafaeaaaaagb, aa 1;
+eafaeaeaeagb, ea 1;
+eakbeaeaeaja, ea 1;

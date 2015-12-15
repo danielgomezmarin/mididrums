@@ -1,0 +1,11 @@
+order, 4;
+step, 10;
+aaaafaaa, aa 1;
+aaaanaaa, aa 1;
+aabaeaaa, aa 1;
+eaaafaaa, ea 1;
+eaeanaaa, fa 0.5 na 0.5;
+faaagaaa, ea 1;
+gaganaaa, fa 0.5 na 0.5;
+mamafaaa, fa 1;
+mamanaaa, fa 0.5 na 0.5;

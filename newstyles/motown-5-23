@@ -1,0 +1,14 @@
+order, 5;
+step, 23;
+aaaagaaaaa, aa 1;
+aabacaaaaa, ba 1;
+aabagaaaaa, aa 1;
+aajacaaaaa, ja 1;
+eaaadaaaea, aa 1;
+eaaagaaaea, aa 1;
+eaaagaaafa, aa 1;
+eaaagaaaja, aa 1;
+eaabdaaaea, aa 1;
+eaeagaaaea, ea 0.5 ma 0.5;
+eaeagaaaga, ea 0.333333 ga 0.666667;
+eaeagaaama, ea 0.333333 ma 0.666667;

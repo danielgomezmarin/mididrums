@@ -1,0 +1,14 @@
+#N canvas 0 69 450 300 10;
+#X msg 100 74 1 2 3 4 5 6;
+#X obj 157 125 l2s;
+#X symbolatom 157 154 30 0 0 0 - - -;
+#X msg 217 73 1 3 5 2 4 0;
+#X text 100 56 lista;
+#X obj 157 106 reorder;
+#X text 216 57 new order (zero based);
+#X text 128 197 give a new order to the elements of a list;
+#X text 205 249 daniel.gomez@upf.edu 2015;
+#X connect 0 0 5 0;
+#X connect 1 0 2 0;
+#X connect 3 0 5 1;
+#X connect 5 0 1 0;

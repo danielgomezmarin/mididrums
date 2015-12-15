@@ -1,0 +1,9 @@
+order, 2;
+step, 8;
+aaaa, fa 0.75 na 0.25;
+aaba, ea 1;
+eaaa, fa 1;
+eaea, na 1;
+faaa, ga 1;
+gaga, na 1;
+mama, fa 0.5 na 0.5;

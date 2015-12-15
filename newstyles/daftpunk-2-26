@@ -1,0 +1,12 @@
+order, 2;
+step, 26;
+aaaa, aa 1;
+baaa, aa 0.142857 ia 0.857143;
+eaaa, ea 1;
+eaea, ia 1;
+faaa, ea 0.829787 ia 0.170213;
+faea, ea 1;
+gbaa, ea 1;
+gbea, ea 1;
+jaaa, ia 1;
+jaea, ea 0.95 ia 0.05;

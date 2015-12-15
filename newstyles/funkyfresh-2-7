@@ -1,0 +1,10 @@
+order, 2;
+step, 7;
+aaaa, aa 0.75 ba 0.25;
+aaba, aa 0.875 ea 0.125;
+aaea, aa 0.304348 ba 0.543478 ea 0.152174;
+aafa, aa 1;
+baaa, ba 1;
+caea, aa 0.25 ba 0.75;
+eaca, aa 0.285714 ea 0.714286;
+eaea, ba 0.8 ca 0.1 ja 0.1;

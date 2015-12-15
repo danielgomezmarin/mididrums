@@ -1,0 +1,11 @@
+order, 4;
+step, 22;
+aaaacaaa, aa 1;
+baaacaaa, aa 0.25 ca 0.25 ea 0.5;
+baaacaca, aa 0.5 ba 0.5;
+baaagaca, ea 1;
+caaacaca, aa 1;
+daaadaaa, da 1;
+faaagaaa, ea 1;
+faaagaca, ea 1;
+gaaacaca, aa 1;

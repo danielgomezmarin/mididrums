@@ -1,0 +1,17 @@
+order, 3;
+step, 23;
+aaea, aa 0.333333 ac 0.166667 ba 0.166667 ca 0.166667 ga 0.166667
+;
+aafa, aa 0.5 ca 0.5;
+aaia, aa 0.352941 ba 0.235294 ca 0.0588235 ea 0.0588235 fa 0.176471 ja 0.0588235 ka 0.0588235
+;
+aaja, aa 0.8 ea 0.2;
+aama, aa 1;
+baea, ga 1;
+baia, aa 1;
+eaea, ga 1;
+eafa, ea 1;
+eaia, aa 0.333333 ia 0.333333 ka 0.333333;
+eama, ia 1;
+iaia, aa 1;
+iaja, aa 1;

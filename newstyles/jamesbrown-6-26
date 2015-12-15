@@ -1,0 +1,15 @@
+order, 6;
+step, 26;
+caaaaaaacaca, aa 1;
+caaaaacacaca, aa 1;
+caaacacaaaca, ca 1;
+caaaeabaeaaa, ba 1;
+cacaaabaaaba, ba 1;
+cacaaacaaaaa, ca 1;
+cacaaacaaaca, ca 1;
+cacababacaaa, ca 1;
+daaadaaadaaa, da 1;
+gaaaeaaacaca, ea 1;
+gaaaeacaeaaa, fa 1;
+gacaeabaeaaa, ba 1;
+gacaeacaeaaa, ba 0.5 ia 0.5;

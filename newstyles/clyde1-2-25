@@ -1,0 +1,26 @@
+order, 2;
+step, 25;
+aaaa, aa 1;
+aaca, ca 1;
+aaea, aa 0.428571 ca 0.428571 ea 0.142857;
+aafa, aa 0.5 ca 0.5;
+aaga, aa 1;
+aaja, aa 1;
+baba, aa 1;
+bafa, aa 1;
+caaa, ca 1;
+caba, aa 0.5 ca 0.5;
+caea, ca 1;
+cafa, aa 0.25 ca 0.75;
+caha, ga 1;
+caja, aa 1;
+eaea, aa 0.285714 ac 0.0714286 ca 0.428571 ec 0.0714286 ga 0.142857
+;
+eafa, aa 1;
+faea, ea 1;
+fafa, aa 0.666667 ca 0.333333;
+gaca, aa 1;
+gaea, ca 0.666667 ga 0.333333;
+gafa, ca 0.142857 ga 0.857143;
+gaga, la 1;
+gaha, ga 1;

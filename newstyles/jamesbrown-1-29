@@ -1,0 +1,7 @@
+order, 1;
+step, 29;
+aa, aa 0.5 ca 0.5;
+ca, aa 0.666667 ca 0.333333;
+da, aa 1;
+ea, aa 1;
+ga, aa 0.25 ca 0.75;

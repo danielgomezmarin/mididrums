@@ -1,0 +1,8 @@
+order, 2;
+step, 4;
+aaaa, ca 1;
+baaa, ca 0.5 ga 0.5;
+eaaa, ca 0.25 ga 0.75;
+faaa, ga 1;
+iaaa, ga 1;
+jaaa, ga 1;

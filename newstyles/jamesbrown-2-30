@@ -1,0 +1,10 @@
+order, 2;
+step, 30;
+aaaa, aa 1;
+aaca, aa 1;
+caaa, aa 0.75 ca 0.25;
+caca, aa 1;
+daaa, aa 1;
+eaaa, aa 1;
+gaaa, aa 1;
+gaca, aa 1;

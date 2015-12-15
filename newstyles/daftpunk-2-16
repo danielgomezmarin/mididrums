@@ -1,0 +1,7 @@
+order, 2;
+step, 16;
+aaaa, aa 0.333333 ba 0.333333 gb 0.333333;
+eaaa, ea 1;
+eaea, ba 0.0121951 ea 0.0487805 fa 0.695122 ja 0.243902;
+iaaa, ba 0.9375 ja 0.0625;
+naea, gb 1;

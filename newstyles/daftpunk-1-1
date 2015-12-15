@@ -1,0 +1,8 @@
+order, 1;
+step, 1;
+aa, aa 1;
+ba, aa 1;
+ea, aa 1;
+fa, aa 1;
+gb, fa 1;
+ja, aa 0.0909091 ea 0.909091;

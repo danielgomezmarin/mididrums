@@ -1,0 +1,8 @@
+order, 5;
+step, 17;
+aaaacaaaaa, aa 1;
+aaaacacaaa, ba 1;
+caaaaaaaba, aa 0.5 ba 0.5;
+caaaeababa, aa 1;
+eaaacaaaea, aa 1;
+eaaagaaaea, aa 1;

@@ -1,0 +1,6 @@
+order, 2;
+step, 12;
+aaaa, aa 0.5 ca 0.5;
+baaa, aa 0.1 ca 0.1 ea 0.8;
+eaaa, ca 1;
+faaa, ea 1;

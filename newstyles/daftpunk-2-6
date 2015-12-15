@@ -1,0 +1,10 @@
+order, 2;
+step, 6;
+abaa, aa 0.5 ia 0.5;
+cbaa, aa 0.133333 ia 0.866667;
+ebaa, ea 1;
+faea, aa 0.333333 ea 0.666667;
+fbaa, ea 1;
+gbaa, ea 1;
+kbaa, ia 1;
+kbea, ea 1;

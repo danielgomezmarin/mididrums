@@ -1,0 +1,14 @@
+order, 2;
+step, 11;
+aaaa, aa 1;
+aaba, aa 0.75 ea 0.25;
+aaea, aa 0.676471 ea 0.323529;
+aafa, aa 0.571429 ea 0.428571;
+aaia, aa 1;
+baaa, ba 1;
+baba, aa 0.181818 ea 0.818182;
+baca, ea 1;
+bada, ea 1;
+baea, ba 0.181818 ca 0.181818 ea 0.636364;
+eaea, ea 1;
+eafa, ea 1;
