@@ -1,7 +1,7 @@
-#N canvas 232 69 946 522 10;
+#N canvas 226 69 946 540 10;
 #X declare -path abstractions;
 #X obj 297 204 hradio 20 1 0 32 nos numberz32 empty 0 -8 0 10 -33289
--191407 -1 0;
+-191407 -1 27;
 #X obj 237 184 abstractions/onset32 kick;
 #X obj 237 164 abstractions/onset32 snare;
 #X obj 237 144 abstractions/onset32 chihat;
@@ -14,7 +14,7 @@
 0;
 #X obj 380 1 cnv 15 180 40 empty empty advanced 0 18 1 40 -33289 -232576
 0;
-#N canvas 378 69 782 683 gui 0;
+#N canvas 363 69 782 683 gui 0;
 #N canvas 126 103 450 420 samples 0;
 #X obj 118 54 loadbang;
 #X obj 75 322 soundfiler;
@@ -45,7 +45,7 @@
 #X restore 59 628 pd samples;
 #X msg 4 647 \; pd dsp 1;
 #X obj 4 628 loadbang;
-#N canvas 410 69 842 688 search 0;
+#N canvas 398 69 842 688 search 1;
 #X obj 288 195 coll \$0-knowledge;
 #C restore;
 #N canvas 297 275 562 451 element2list 0;
@@ -637,7 +637,7 @@ order.;
 #X connect 9 0 1 0;
 #X restore 409 174 pd first past;
 #X obj 191 139 t f f b f;
-#N canvas 156 158 1118 389 transformations 0;
+#N canvas 144 150 1118 389 transformations 1;
 #X obj 57 162 inlet;
 #X obj 541 352 outlet;
 #X obj 116 161 r \$0-commonness;
@@ -762,7 +762,7 @@ order.;
 #X connect 19 0 13 0;
 #X connect 19 1 14 0;
 #X connect 20 0 19 0;
-#X restore 57 223 pd commonness b;
+#X restore 38 293 pd commonness b;
 #X obj 116 180 t b f;
 #X text 153 179 first update the commonness value and then generate
 the new pattern.;
@@ -1289,7 +1289,7 @@ with the density that comes from the slider;
 #X connect 39 0 22 1;
 #X connect 40 0 23 1;
 #X restore 541 311 pd density c;
-#N canvas 297 373 475 491 commonness 0;
+#N canvas 294 277 475 491 commonness 0;
 #N canvas 715 412 389 266 normalize 0;
 #X obj 167 49 inlet;
 #X obj 167 70 t b a a;
@@ -1429,12 +1429,11 @@ with the density that comes from the slider;
 #X connect 25 1 22 0;
 #X connect 26 0 2 1;
 #X connect 27 0 3 0;
-#X restore 108 276 pd commonness c;
-#X connect 0 0 3 0;
+#X restore 57 226 pd commonness c;
+#X connect 0 0 24 0;
 #X connect 2 0 4 0;
-#X connect 3 0 23 0;
 #X connect 4 0 9 0;
-#X connect 4 1 3 1;
+#X connect 4 1 24 1;
 #X connect 7 0 8 0;
 #X connect 8 0 10 0;
 #X connect 8 1 18 1;
@@ -1446,6 +1445,7 @@ with the density that comes from the slider;
 #X connect 21 0 18 0;
 #X connect 22 0 1 0;
 #X connect 23 0 22 0;
+#X connect 24 0 1 0;
 #X restore 225 346 pd transformations;
 #N canvas 904 178 450 300 iterate32 0;
 #X obj 63 29 inlet bang;
@@ -1827,7 +1827,7 @@ with the density that comes from the slider;
 #X connect 82 0 45 0;
 #X connect 85 0 10 1;
 #X restore 276 660 pd patt2sound;
-#N canvas 4 69 1169 699 patt2sequencer 0;
+#N canvas 0 69 1169 699 patt2sequencer 0;
 #X obj 131 28 inlet;
 #X obj 158 205 pack;
 #X obj 188 205 pack;
@@ -1963,8 +1963,8 @@ with the density that comes from the slider;
 #X connect 42 0 43 0;
 #X connect 43 0 40 0;
 #X restore 28 465 pd patt2sequencer;
-#X obj 352 319 hsl 128 15 -1 1 0 1 nos nor commonness 30 8 1 12 -262144
--1 -1 6350 1;
+#X obj 352 342 hsl 128 15 -1 1 0 1 nos nor commonness 30 8 1 12 -262144
+-1 -1 3450 1;
 #N canvas 562 557 450 157 mouseup 0;
 #X obj 178 18 inlet;
 #X msg 194 68 stop;
@@ -1980,11 +1980,11 @@ with the density that comes from the slider;
 #X connect 4 2 5 0;
 #X connect 4 3 3 1;
 #X connect 5 0 3 0;
-#X restore 194 348 pd mouseup;
-#X obj 194 363 s \$0-commonness;
+#X restore 194 371 pd mouseup;
+#X obj 194 386 s \$0-commonness;
 #X obj 276 641 r numberz32;
-#X obj 195 404 s \$0-density;
-#X obj 352 338 hsl 128 15 -1 1 0 1 nos nor density 46 8 1 12 -262144
+#X obj 25 256 s \$0-density;
+#X obj 28 219 hsl 128 15 -1 1 0 1 nos nor density 46 8 1 12 -262144
 -1 -1 6350 1;
 #N canvas 565 559 450 157 mouseup 0;
 #X obj 178 18 inlet;
@@ -2001,19 +2001,19 @@ with the density that comes from the slider;
 #X connect 4 2 5 0;
 #X connect 4 3 3 1;
 #X connect 5 0 3 0;
-#X restore 195 385 pd mouseup;
-#X text 412 323 .;
-#X text 412 324 .;
-#X text 412 325 .;
-#X text 412 304 .;
-#X text 412 305 .;
-#X text 412 306 .;
-#X msg 630 302 0;
-#X obj 352 357 hsl 128 15 0 1 0 1 nos nor syncopation 33 8 1 12 -262144
+#X restore 25 237 pd mouseup;
+#X text 412 346 .;
+#X text 412 347 .;
+#X text 412 348 .;
+#X text 412 327 .;
+#X text 412 328 .;
+#X text 412 329 .;
+#X msg 268 336 0;
+#X obj 26 302 hsl 128 15 0 1 0 1 nos nor syncopation 33 8 1 12 -262144
 -1 -1 6350 1;
-#X text 412 342 .;
-#X text 412 343 .;
-#X text 412 344 .;
+#X text 86 287 .;
+#X text 86 288 .;
+#X text 86 289 .;
 #N canvas 565 559 450 157 mouseup 0;
 #X obj 178 18 inlet;
 #X msg 194 68 stop;
@@ -2029,13 +2029,13 @@ with the density that comes from the slider;
 #X connect 4 2 5 0;
 #X connect 4 3 3 1;
 #X connect 5 0 3 0;
-#X restore 195 425 pd mouseup;
-#X msg 681 340 0.5;
-#X obj 195 444 s \$0-syncopation;
+#X restore 23 319 pd mouseup;
+#X msg 71 283 0.5;
+#X obj 23 338 s \$0-syncopation;
 #X obj 301 252 cnv 15 228 60 empty empty empty 20 12 0 14 -191407 -66577
 0;
 #X obj 391 262 tgl 40 0 start-drumz nor start 0 19 0 14 -262144 -1
--1 0 1;
+-1 1 1;
 #X obj 445 284 nbx 4 18 0 200 0 1 bpm tap-bpm BPM 0 -8 1 20 -262144
 -1 -1 121.399 256;
 #N canvas 343 219 785 500 tap 0;
@@ -2103,9 +2103,9 @@ with the density that comes from the slider;
 #X obj 200 323 s tap-bpm;
 #X obj 430 151 bng 90 250 50 0 \$0-generate-drumz empty new_riddim
 3 44 1 17 -33289 -261234 -262144;
-#X obj 551 302 r comm;
-#X obj 551 321 r den;
-#X obj 551 340 r sync;
+#X obj 551 325 r comm;
+#X obj 32 197 r den;
+#X obj 25 283 r sync;
 #X obj 261 245 r st;
 #X obj 557 169 r cng;
 #X obj 303 14 r prv;
@@ -2124,7 +2124,7 @@ with the density that comes from the slider;
 -228856 0;
 #X obj 303 79 % 6;
 #X obj 60 652 declare -path abstractions;
-#X msg 660 321 0;
+#X msg 96 200 0;
 #X obj 353 376 hsl 128 15 0 1 0 1 nos nor volume 33 8 1 12 -1 -262144
 -262144 6700 1;
 #X obj 195 463 s \$0-volume;
@@ -2167,9 +2167,9 @@ with the density that comes from the slider;
 #X obj 414 422 vsl 25 120 -1 1 0 1 nos nor Cp 1 110 1 18 -262144 -33289
 -33289 5950 1;
 #X obj 389 422 vsl 25 120 -1 1 0 1 nos nor Oh 1 110 1 18 -262144 -33289
--33289 5950 1;
+-33289 6750 1;
 #X obj 364 422 vsl 25 120 -1 1 0 1 nos nor Ch 1 110 1 18 -262144 -33289
--33289 5950 1;
+-33289 5550 1;
 #X obj 339 422 vsl 25 120 -1 1 0 1 nos nor S 7 110 1 18 -262144 -33289
 -33289 5950 1;
 #X obj 314 422 vsl 25 120 -1 1 0 1 nos nor K 7 110 1 18 -262144 -33289
@@ -2188,7 +2188,7 @@ with the density that comes from the slider;
 #X obj 517 477 bng 10 250 50 0 nos nor empty 17 7 0 10 -262144 -1 -1
 ;
 #X msg 556 403 0;
-#N canvas 156 217 854 351 agnostic-density 0;
+#N canvas 153 215 854 351 agnostic-density 0;
 #X obj 49 263 populate_rhythm;
 #X obj 49 186 tabdump kickpattern;
 #X obj 49 282 s kick-string;
@@ -2936,6 +2936,8 @@ information is the preceding elements.;
 #X text 645 531 garagehouse;
 #X text 629 414 order;
 #X obj 555 384 loadbang;
+#X obj 484 342 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X connect 2 0 1 0;
 #X connect 3 0 15 0;
 #X connect 3 1 5 0;
@@ -3005,6 +3007,7 @@ information is the preceding elements.;
 #X connect 95 3 92 0;
 #X connect 97 0 93 0;
 #X connect 105 0 83 0;
+#X connect 106 0 29 0;
 #X coords 0 -1 1 1 230 450 2 300 100;
 #X restore 3 43 pd gui;
 #N canvas 116 296 1161 403 midi 0;
@@ -3145,15 +3148,15 @@ information is the preceding elements.;
 #X connect 66 0 55 0;
 #X connect 67 0 55 0;
 #X connect 68 0 55 0;
-#X restore 238 495 pd midi;
+#X restore 234 474 pd midi;
 #X obj 237 104 onset32 clap;
 #X obj 237 84 onset32 rimshot;
 #X obj 237 64 onset32 loconga;
 #X obj 237 44 onset32 hiconga;
-#X text 248 259 This patch contains the same changes as before:;
-#X text 266 302 2 precompute styles;
-#X text 241 382 The new changes are:;
-#X obj 628 356 markovdrums;
+#X text 293 247 This patch contains the same changes as before:;
+#X text 311 290 2 precompute styles;
+#X text 289 436 The new changes are:;
+#X obj 710 351 markovdrums;
 #N canvas 670 337 613 300 stylename 0;
 #X obj 107 43 inlet;
 #X obj 198 184 symbol;
@@ -3181,15 +3184,15 @@ information is the preceding elements.;
 #X connect 8 0 1 0;
 #X connect 9 0 1 0;
 #X connect 10 0 1 0;
-#X restore 691 317 pd stylename;
-#X obj 786 264 nbx 5 14 0 8 0 1 empty empty empty 0 -8 0 10 -262144
+#X restore 773 312 pd stylename;
+#X obj 868 259 nbx 5 14 0 8 0 1 empty empty empty 0 -8 0 10 -262144
 -1 -1 4 256;
-#X obj 691 336 pack s f;
-#X obj 691 265 hradio 15 1 0 6 empty empty empty 0 -8 0 10 -262144
+#X obj 773 331 pack s f;
+#X obj 773 260 hradio 15 1 0 6 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
-#X text 695 248 select style;
-#X text 783 246 select order;
-#X obj 628 339 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X text 777 243 select style;
+#X text 865 241 select order;
+#X obj 710 334 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #N canvas 54 290 581 423 patt2sequencer 0;
 #X obj 234 26 inlet;
@@ -3288,159 +3291,26 @@ information is the preceding elements.;
 #X connect 20 0 5 1;
 #X connect 20 1 7 1;
 #X connect 21 0 10 1;
-#X restore 628 375 pd patt2sequencer;
-#X obj 786 281 t b f;
-#X obj 691 298 f;
-#X obj 686 431 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#N canvas 670 337 613 300 stylename 0;
-#X obj 107 43 inlet;
-#X obj 198 184 symbol;
-#X msg 461 144 hiphop;
-#X obj 107 63 sel 0 1 2 3 4 5;
-#X obj 198 207 outlet;
-#X msg 20 147 motown;
-#X msg 78 147 jamesbrown;
-#X msg 160 146 clyde1;
-#X msg 218 145 funkyfresh;
-#X msg 301 144 daftpunk;
-#X msg 373 144 garagehouse;
-#X connect 0 0 3 0;
-#X connect 1 0 4 0;
-#X connect 2 0 1 0;
-#X connect 3 0 5 0;
-#X connect 3 1 6 0;
-#X connect 3 2 7 0;
-#X connect 3 3 8 0;
-#X connect 3 4 9 0;
-#X connect 3 5 10 0;
-#X connect 5 0 1 0;
-#X connect 6 0 1 0;
-#X connect 7 0 1 0;
-#X connect 8 0 1 0;
-#X connect 9 0 1 0;
-#X connect 10 0 1 0;
-#X restore 749 407 pd stylename;
-#X obj 849 354 nbx 5 14 0 8 0 1 empty empty empty 0 -8 0 10 -262144
--1 -1 2 256;
-#X obj 749 426 pack s f;
-#X obj 749 355 hradio 15 1 0 6 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
-#X text 753 338 select style;
-#X text 846 336 select order;
-#X obj 849 371 t b f;
-#X obj 749 388 f;
-#X obj 686 448 markovdrums;
-#N canvas 54 290 581 423 patt2sequencer 0;
-#X obj 234 26 inlet;
-#X obj 100 169 pack;
-#X obj 100 323 s kick-allocate;
-#X obj 130 169 pack;
-#X obj 130 304 s snare-allocate;
-#X obj 160 226 pack;
-#X obj 160 288 s chihat-allocate;
-#X obj 234 225 pack;
-#X obj 241 269 s ohihat-allocate;
-#X obj 234 49 list split 1;
-#X obj 234 90 list;
-#X obj 234 112 unpack f f f f f f f f f;
-#X obj 287 170 pack;
-#X obj 287 248 s clap-allocate;
-#X obj 320 170 pack;
-#X obj 320 228 s rimshot-allocate;
-#X obj 352 169 pack;
-#X obj 352 208 s loconga-allocate;
-#X obj 383 169 pack;
-#X obj 383 189 s hiconga-allocate;
-#N canvas 801 440 450 332 avoid 0;
-#X obj 159 16 inlet;
-#X obj 200 20 inlet;
-#X obj 172 293 outlet;
-#X obj 230 292 outlet;
-#X obj 244 73 &;
-#X obj 244 93 - 1;
-#X obj 244 113 abs;
-#X obj 214 44 t f f;
-#X obj 157 165 spigot;
-#X obj 214 165 spigot;
-#X msg 244 239 0;
-#X msg 271 239 1;
-#X floatatom 281 160 5 0 0 0 - - -;
-#X obj 244 133 t f f f;
-#X obj 244 193 sel 0;
-#X obj 244 213 t b b;
-#X floatatom 282 74 5 0 0 0 - - -;
-#X obj 157 44 t f b f;
-#X obj 197 114 f;
-#X connect 0 0 17 0;
-#X connect 1 0 7 0;
-#X connect 4 0 5 0;
-#X connect 4 0 16 0;
-#X connect 5 0 6 0;
-#X connect 6 0 13 0;
-#X connect 7 0 18 1;
-#X connect 7 1 4 1;
-#X connect 8 0 2 0;
-#X connect 9 0 3 0;
-#X connect 10 0 2 0;
-#X connect 11 0 3 0;
-#X connect 13 0 14 0;
-#X connect 13 1 8 1;
-#X connect 13 2 9 1;
-#X connect 13 2 12 0;
-#X connect 14 0 15 0;
-#X connect 15 0 10 0;
-#X connect 15 1 11 0;
-#X connect 17 0 8 0;
-#X connect 17 1 18 0;
-#X connect 17 2 4 0;
-#X connect 18 0 9 0;
-#X restore 195 197 pd avoid ch&oh;
-#X obj 268 70 w22l;
-#X connect 0 0 9 0;
-#X connect 1 0 2 0;
-#X connect 3 0 4 0;
-#X connect 5 0 6 0;
-#X connect 7 0 8 0;
-#X connect 9 0 10 0;
-#X connect 9 1 21 0;
-#X connect 10 0 11 0;
-#X connect 11 0 1 0;
-#X connect 11 0 3 0;
-#X connect 11 0 5 0;
-#X connect 11 0 7 0;
-#X connect 11 0 12 0;
-#X connect 11 0 14 0;
-#X connect 11 0 16 0;
-#X connect 11 0 18 0;
-#X connect 11 1 1 1;
-#X connect 11 2 3 1;
-#X connect 11 3 20 0;
-#X connect 11 4 20 1;
-#X connect 11 5 12 1;
-#X connect 11 6 14 1;
-#X connect 11 7 16 1;
-#X connect 11 8 18 1;
-#X connect 12 0 13 0;
-#X connect 14 0 15 0;
-#X connect 16 0 17 0;
-#X connect 18 0 19 0;
-#X connect 20 0 5 1;
-#X connect 20 1 7 1;
-#X connect 21 0 10 1;
-#X restore 686 467 pd patt2sequencer;
-#X text 266 315 3 we have a style generator (see patches in this same
+#X restore 710 370 pd patt2sequencer;
+#X obj 868 276 t b f;
+#X obj 773 293 f;
+#X text 311 303 3 we have a style generator (see patches in this same
 folder) in order to precompute as much as we can.;
-#X text 266 342 4 we have an abstraction that given a style and and
+#X text 311 330 4 we have an abstraction that given a style and and
 order generates a 32 step long Markov chain. Its called "markovdrums"
 (see /abstractions folder);
-#X text 267 396 5 i have included a "populate" object also called 'agnostic
+#X text 312 370 5 i have included a "populate" object also called 'agnostic
 density transformer' which changes the density according to the position
 of the onsets trying to maintain the most importantones (syncopations/reinforcements)
 in the most important beats.;
 #X text 49 493 daniel.gomez@upf.edu;
-#X text 266 275 1 reduce the size of the probability matrices to just
+#X text 311 263 1 reduce the size of the probability matrices to just
 the needed size.;
+#X text 315 451 7 the commonness has been updated to "commonness c"
+a new algorithm that is normalizing the commonnes according to the
+probability values at every step. Density and syncopation have been
+disconnected.;
+#X text 562 358 ----------------------->;
 #X connect 18 0 26 0;
 #X connect 19 0 21 0;
 #X connect 20 0 27 0;
@@ -3450,12 +3320,3 @@ the needed size.;
 #X connect 27 0 28 0;
 #X connect 27 1 21 1;
 #X connect 28 0 19 0;
-#X connect 29 0 38 0;
-#X connect 30 0 32 0;
-#X connect 31 0 36 0;
-#X connect 32 0 38 1;
-#X connect 33 0 37 0;
-#X connect 36 0 37 0;
-#X connect 36 1 32 1;
-#X connect 37 0 30 0;
-#X connect 38 0 39 0;
