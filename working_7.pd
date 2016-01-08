@@ -1,7 +1,7 @@
-#N canvas 226 69 946 540 10;
+#N canvas 223 69 946 540 10;
 #X declare -path abstractions;
 #X obj 297 204 hradio 20 1 0 32 nos numberz32 empty 0 -8 0 10 -33289
--191407 -1 27;
+-191407 -1 0;
 #X obj 237 184 abstractions/onset32 kick;
 #X obj 237 164 abstractions/onset32 snare;
 #X obj 237 144 abstractions/onset32 chihat;
@@ -45,7 +45,7 @@
 #X restore 59 628 pd samples;
 #X msg 4 647 \; pd dsp 1;
 #X obj 4 628 loadbang;
-#N canvas 398 69 842 688 search 1;
+#N canvas 395 69 842 688 search 0;
 #X obj 288 195 coll \$0-knowledge;
 #C restore;
 #N canvas 297 275 562 451 element2list 0;
@@ -637,7 +637,7 @@ order.;
 #X connect 9 0 1 0;
 #X restore 409 174 pd first past;
 #X obj 191 139 t f f b f;
-#N canvas 144 150 1118 389 transformations 1;
+#N canvas 141 148 1118 389 transformations 0;
 #X obj 57 162 inlet;
 #X obj 541 352 outlet;
 #X obj 116 161 r \$0-commonness;
@@ -2035,7 +2035,7 @@ with the density that comes from the slider;
 #X obj 301 252 cnv 15 228 60 empty empty empty 20 12 0 14 -191407 -66577
 0;
 #X obj 391 262 tgl 40 0 start-drumz nor start 0 19 0 14 -262144 -1
--1 1 1;
+-1 0 1;
 #X obj 445 284 nbx 4 18 0 200 0 1 bpm tap-bpm BPM 0 -8 1 20 -262144
 -1 -1 121.399 256;
 #N canvas 343 219 785 500 tap 0;
@@ -2167,9 +2167,9 @@ with the density that comes from the slider;
 #X obj 414 422 vsl 25 120 -1 1 0 1 nos nor Cp 1 110 1 18 -262144 -33289
 -33289 5950 1;
 #X obj 389 422 vsl 25 120 -1 1 0 1 nos nor Oh 1 110 1 18 -262144 -33289
--33289 6750 1;
+-33289 5950 1;
 #X obj 364 422 vsl 25 120 -1 1 0 1 nos nor Ch 1 110 1 18 -262144 -33289
--33289 5550 1;
+-33289 5950 1;
 #X obj 339 422 vsl 25 120 -1 1 0 1 nos nor S 7 110 1 18 -262144 -33289
 -33289 5950 1;
 #X obj 314 422 vsl 25 120 -1 1 0 1 nos nor K 7 110 1 18 -262144 -33289
