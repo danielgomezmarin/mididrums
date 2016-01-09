@@ -1,6 +1,6 @@
-#N canvas 258 91 741 422 10;
+#N canvas 1 82 1265 746 10;
 #X declare -path abstractions;
-#X text 15 416 daniel.gomez@upf.edu;
+#X text 14 174 daniel.gomez@upf.edu;
 #N canvas 116 296 1161 403 midi 0;
 #X obj 50 19 ctlin 29;
 #X obj 50 39 list prepend;
@@ -141,47 +141,47 @@
 #X connect 68 0 55 0;
 #X connect 69 0 55 0;
 #X connect 70 0 55 0;
-#X restore 1063 434 pd midi;
-#X obj 957 428 % 32;
-#X obj 957 446 s numberz32;
-#X obj 958 408 r \$0-pulp_beat;
-#X msg 1068 360 0;
-#X msg 1115 362 0.5;
-#X msg 954 265 0;
-#X obj 994 231 loadbang;
-#X obj 998 247 delay 1000;
-#X obj 952 201 r zero-ag;
-#X obj 957 291 s ag-kick-in;
-#X obj 956 310 s ag-snare-in;
-#X obj 955 329 s ag-ch-in;
-#X obj 955 347 s ag-oh-in;
-#X obj 955 366 s ag-cp-in;
-#X obj 956 385 s ag-rs-in;
-#X obj 1062 340 r zero-dws;
-#X obj 1069 384 s comm;
-#X obj 1068 405 s den;
-#X obj 1116 383 s sync;
-#X obj 2 2 cnv 15 720 400 empty \$0-title Markov Drums 5 20 1 30 -128992
+#X restore 1547 358 pd midi;
+#X obj 1619 331 % 32;
+#X obj 1619 350 s numberz32;
+#X obj 1619 312 r \$0-pulp_beat;
+#X msg 1642 715 0;
+#X msg 1678 720 0.5;
+#X msg 1665 515 0;
+#X obj 1678 435 loadbang;
+#X obj 1679 471 delay 1000;
+#X obj 1668 403 r zero-ag;
+#X obj 1695 558 s ag-kick-in;
+#X obj 1678 584 s ag-snare-in;
+#X obj 1693 613 s ag-ch-in;
+#X obj 1690 533 s ag-oh-in;
+#X obj 1674 643 s ag-cp-in;
+#X obj 1675 662 s ag-rs-in;
+#X obj 1636 695 r zero-dws;
+#X obj 1643 739 s comm;
+#X obj 1642 760 s den;
+#X obj 1700 750 s sync;
+#X obj 2 2 cnv 15 1440 800 empty \$0-title Markov Drums 5 30 1 60 -128992
 -258699 0;
-#X obj 261 223 vsl 20 140 -1 1 0 1 param_comm-ui comm commonness -23
--7 1 12 -66577 -258113 -228856 2850 1;
-#X obj 291 283 bng 20 250 50 0 zero-dws nor empty 17 7 0 10 -66577
+#X obj 528 434 vsl 40 280 -1 1 0 1 param_comm-ui comm commonness -113
+-60 1 48 -66577 -258113 -228856 13950 1;
+#X obj 578 555 bng 40 250 50 0 zero-dws nor empty 17 7 0 10 -66577
 -258113 -258113;
-#X obj 485 223 vsl 20 140 -1 1 0 1 param_ag-cp ag-cp-in Cp 1 -10 1
-12 -66577 -258113 -228856 6950 1;
-#X obj 455 223 vsl 20 140 -1 1 0 1 param_ag-oh ag-oh-in Oh 1 -10 1
-12 -66577 -258113 -228856 6950 1;
-#X obj 425 223 vsl 20 140 -1 1 0 1 param_ag-ch ag-ch-in Ch 1 -10 1
-12 -66577 -258113 -228856 6950 1;
-#X obj 395 223 vsl 20 140 -1 1 0 1 param_ag-snare ag-snare-in S 7 -10
-1 12 -66577 -258113 -228856 6950 1;
-#X obj 365 223 vsl 20 140 -1 1 0 1 param_ag-kick ag-kick-in K 7 -10
-1 12 -66577 -258113 -228856 6950 1;
-#X obj 515 223 vsl 20 140 -1 1 0 1 param_ag-rs ag-rs-in Rs 1 -10 1
-12 -66577 -258113 -228856 6950 1;
-#X obj 545 283 bng 20 250 50 0 zero-ag nor empty 17 7 0 10 -66577 -258113
--258113;
-#N canvas 417 69 874 699 gui 0;
+#X obj 930 434 vsl 40 280 -1 1 0 1 param_ag-cp ag-cp-in Cp 1 -20 1
+24 -66577 -258113 -228856 13950 1;
+#X obj 880 434 vsl 40 280 -1 1 0 1 param_ag-oh ag-oh-in Oh 1 -20 1
+24 -66577 -258113 -228856 13950 1;
+#X obj 830 434 vsl 40 280 -1 1 0 1 param_ag-ch ag-ch-in Ch 1 -20 1
+24 -66577 -258113 -228856 13950 1;
+#X obj 780 434 vsl 40 280 -1 1 0 1 param_ag-snare ag-snare-in S 7 -20
+1 24 -66577 -258113 -228856 13950 1;
+#X obj 730 434 vsl 40 280 -1 1 0 1 param_ag-kick ag-kick-in K 7 -20
+1 24 -66577 -258113 -228856 13950 1;
+#X obj 980 434 vsl 40 280 -1 1 0 1 param_ag-rs ag-rs-in Rs 1 -20 1
+24 -66577 -258113 -228856 13950 1;
+#X obj 1041 554 bng 40 250 50 0 zero-ag nor empty 17 7 0 10 -66577
+-258113 -258113;
+#N canvas 135 100 1084 699 gui 0;
 #N canvas 126 103 450 420 samples 0;
 #X obj 118 54 loadbang;
 #X obj 75 322 soundfiler;
@@ -1717,8 +1717,8 @@ with the density that comes from the slider;
 #X obj 78 441 print ZFS;
 #X obj 78 420 bng 15 250 50 0 nos nor empty 17 7 0 10 -262144 -1 -1
 ;
-#X obj 301 101 cnv 15 128 178 empty \$0-style select a style 2 10 1
-20 -128992 -258699 0;
+#X obj 301 101 cnv 15 258 328 empty \$0-style select a style 14 20
+1 48 -128992 -262144 0;
 #N canvas 518 91 643 300 pace 0;
 #X obj 111 -127 f;
 #X obj 155 -126 + 1;
@@ -1778,15 +1778,15 @@ with the density that comes from the slider;
 #X connect 25 0 22 0;
 #X connect 25 1 24 0;
 #X restore 361 660 pd pace;
-#X obj 331 122 cnv 15 90 20 empty empty motown 0 12 1 14 -128992 -228856
+#X obj 361 159 cnv 15 90 20 empty empty motown 0 12 1 28 -128992 -228856
 0;
-#X obj 331 140 cnv 15 90 20 empty empty jamesBrown 0 12 1 14 -128992
+#X obj 361 203 cnv 15 90 20 empty empty jamesBrown 0 12 1 28 -128992
 -228856 0;
-#X obj 331 160 cnv 15 90 20 empty empty clyde1 0 12 1 14 -128992 -228856
+#X obj 361 244 cnv 15 90 20 empty empty clyde1 0 12 1 28 -128992 -228856
 0;
-#X obj 331 180 cnv 15 90 20 empty empty funkyfresh 0 12 1 14 -128992
+#X obj 361 282 cnv 15 90 20 empty empty funkyfresh 0 12 1 28 -128992
 -228856 0;
-#N canvas 260 416 916 300 setup 0;
+#N canvas 116 457 916 300 setup 0;
 #X obj 72 176 f \$0;
 #X obj 87 198 list;
 #X obj 540 179 f \$0;
@@ -1802,18 +1802,19 @@ with the density that comes from the slider;
 #X obj 378 167 f \$0;
 #X obj 393 189 list;
 #X obj 378 145 t b a;
-#X msg 378 126 1 20;
 #X msg 396 213 \; \$1-style label_font \$2 \$3;
 #X msg 238 214 \; \$1-style label_pos \$2 \$3;
 #X obj 168 94 loadbang;
-#X msg 223 130 2 10;
 #X msg 541 111 select a style;
 #X obj 670 153 f \$0;
 #X obj 692 178 list;
 #X obj 670 131 t b a;
 #X msg 692 201 \; \$1-style color \$2 \$3;
-#X msg 72 135 128 178;
-#X msg 670 111 11 13;
+#X msg 72 135 258 328;
+#X msg 223 130 14 20;
+#X msg 378 126 1 48;
+#X text 710 106 11 13;
+#X msg 670 112 11 0;
 #X connect 0 0 1 0;
 #X connect 1 0 8 0;
 #X connect 2 0 3 0;
@@ -1824,27 +1825,27 @@ with the density that comes from the slider;
 #X connect 7 0 0 0;
 #X connect 7 1 1 1;
 #X connect 9 0 10 0;
-#X connect 10 0 17 0;
+#X connect 10 0 16 0;
 #X connect 11 0 9 0;
 #X connect 11 1 10 1;
 #X connect 12 0 13 0;
-#X connect 13 0 16 0;
+#X connect 13 0 15 0;
 #X connect 14 0 12 0;
 #X connect 14 1 13 1;
-#X connect 15 0 14 0;
-#X connect 18 0 25 0;
-#X connect 18 0 19 0;
-#X connect 18 0 15 0;
-#X connect 18 0 20 0;
-#X connect 18 0 26 0;
-#X connect 19 0 11 0;
-#X connect 20 0 6 0;
-#X connect 21 0 22 0;
-#X connect 22 0 24 0;
-#X connect 23 0 21 0;
-#X connect 23 1 22 1;
-#X connect 25 0 7 0;
-#X connect 26 0 23 0;
+#X connect 17 0 23 0;
+#X connect 17 0 24 0;
+#X connect 17 0 25 0;
+#X connect 17 0 18 0;
+#X connect 17 0 27 0;
+#X connect 18 0 6 0;
+#X connect 19 0 20 0;
+#X connect 20 0 22 0;
+#X connect 21 0 19 0;
+#X connect 21 1 20 1;
+#X connect 23 0 7 0;
+#X connect 24 0 11 0;
+#X connect 25 0 14 0;
+#X connect 27 0 21 0;
 #X restore 126 628 pd setup;
 #N canvas 93 209 1043 549 patt2sound 0;
 #X obj 89 167 tabplay~ k;
@@ -2044,10 +2045,10 @@ with the density that comes from the slider;
 #X connect 4 2 5 0;
 #X connect 4 3 3 1;
 #X connect 5 0 3 0;
-#X restore 256 387 pd mouseup;
-#X obj 256 402 s \$0-commonness;
+#X restore 425 44 pd mouseup;
+#X obj 425 63 s \$0-commonness;
 #X obj 276 641 r numberz32;
-#X obj 374 405 s \$0-density;
+#X obj 543 62 s \$0-density;
 #N canvas 565 559 450 157 mouseup 0;
 #X obj 178 18 inlet;
 #X msg 194 68 stop;
@@ -2063,7 +2064,7 @@ with the density that comes from the slider;
 #X connect 4 2 5 0;
 #X connect 4 3 3 1;
 #X connect 5 0 3 0;
-#X restore 374 386 pd mouseup;
+#X restore 543 43 pd mouseup;
 #N canvas 565 559 450 157 mouseup 0;
 #X obj 178 18 inlet;
 #X msg 194 68 stop;
@@ -2079,11 +2080,11 @@ with the density that comes from the slider;
 #X connect 4 2 5 0;
 #X connect 4 3 3 1;
 #X connect 5 0 3 0;
-#X restore 497 386 pd mouseup;
-#X obj 497 405 s \$0-syncopation;
+#X restore 626 414 pd mouseup;
+#X obj 626 433 s \$0-syncopation;
 #X obj 114 232 tgl 40 0 start-drumz nor start 0 19 0 14 -262144 -1
 -1 0 1;
-#X obj 627 272 nbx 4 18 0 200 0 1 bpm tap-bpm BPM 0 -8 1 20 -262144
+#X obj 755 270 nbx 4 18 0 200 0 1 bpm tap-bpm BPM 0 -8 1 20 -262144
 -1 -1 121.399 256;
 #N canvas 343 219 785 500 tap 0;
 #X obj 244 55 timer;
@@ -2148,23 +2149,23 @@ with the density that comes from the slider;
 #X obj 58 234 bng 40 250 50 0 empty empty tap 6 18 1 20 -33289 -261234
 -262144;
 #X obj 58 300 s tap-bpm;
-#X obj 309 262 bng 15 250 50 0 \$0-generate-drumz empty new pattern
-17 7 0 10 -66577 -258699 -233017;
+#X obj 309 424 bng 40 250 50 0 \$0-generate-drumz empty new pattern
+55 18 1 28 -258699 -66577 -233017;
 #X obj 103 175 r st;
-#X obj 559 196 r cng;
+#X obj 687 194 r cng;
 #X obj 303 14 r prv;
 #X obj 343 14 r nxt;
 #X obj 303 56 +;
 #X obj 337 56 f;
 #X msg 303 34 1;
 #X msg 336 34 -1;
-#X obj 559 215 s \$0-generate-drumz;
-#X obj 559 234 r bp;
-#X obj 559 255 int;
+#X obj 687 213 s \$0-generate-drumz;
+#X obj 687 232 r bp;
+#X obj 687 253 int;
 #X obj 71 175 r tp;
-#X obj 331 201 cnv 15 90 20 empty empty daftpunk 0 12 1 14 -128992
+#X obj 360 323 cnv 15 90 20 empty empty daftpunk 0 12 1 28 -128992
 -228856 0;
-#X obj 331 221 cnv 15 90 20 empty empty garageHouse 0 12 1 14 -128992
+#X obj 360 361 cnv 15 90 20 empty empty garageHouse 0 12 1 28 -128992
 -228856 0;
 #X obj 303 76 % 6;
 #X obj 60 652 declare -path abstractions;
@@ -2201,12 +2202,12 @@ with the density that comes from the slider;
 #X connect 9 0 1 0;
 #X connect 10 0 1 0;
 #X connect 11 0 1 0;
-#X restore 492 175 pd load a style to the coll;
-#X obj 465 156 t b f;
+#X restore 620 173 pd load a style to the coll;
+#X obj 593 154 t b f;
 #X obj 26 379 r \$0-generate-drumz;
-#X obj 465 137 r \$0-stylenumber;
+#X obj 593 135 r \$0-stylenumber;
 #X text 274 615 Playback;
-#X text 370 687 ____________________________________________________________
+#X text 372 699 ____________________________________________________________
 ;
 #X obj 364 642 hsl 70 15 0 5 0 0 empty empty groove 15 7 0 10 -262144
 -1 -1 0 1;
@@ -2216,13 +2217,13 @@ with the density that comes from the slider;
 #X msg 529 546 oh \$1;
 #X msg 624 551 cp \$1;
 #X msg 723 551 rs \$1;
-#X obj 260 368 r param_comm-ui;
+#X obj 425 25 r param_comm-ui;
 #X obj 672 493 hradio 18 1 1 8 \$0-order nor empty 0 -8 0 10 -262144
 -1 -1 2;
-#X obj 309 122 vradio 20 1 1 6 \$0-stylenumber nor empty 0 -8 0 10
+#X obj 309 154 vradio 40 1 1 6 \$0-stylenumber nor empty 0 -8 0 10
 -66577 -258113 -1 0;
-#X obj 373 366 r param_den-ui;
-#X obj 497 366 r param_sync-ui;
+#X obj 543 24 r param_den-ui;
+#X obj 626 394 r param_sync-ui;
 #X obj 139 121 r vol-ui;
 #X obj 237 526 r param_ag-kick;
 #X obj 336 526 r param_ag-snare;
@@ -2568,12 +2569,13 @@ with the density that comes from the slider;
 #X connect 86 0 21 0;
 #X connect 87 0 25 0;
 #X restore 131 572 pd agnostic-density;
-#X msg 476 326 label \$1;
-#X msg 476 288 new pattern;
-#X obj 476 307 l2s;
-#X obj 561 300 loadbang;
-#X msg 549 330 color 2 13 10;
-#X msg 693 185 bang;
+#X msg 604 353 label \$1;
+#X msg 604 315 new pattern;
+#X obj 604 334 l2s;
+#X obj 684 298 loadbang;
+#X msg 821 183 bang;
+#X msg 684 338 color 13 2 10 \, size 40 \, label_pos 55 18 \, label_font
+1 28;
 #X connect 2 0 1 0;
 #X connect 3 0 70 0;
 #X connect 3 1 5 0;
@@ -2622,33 +2624,35 @@ with the density that comes from the slider;
 #X connect 72 0 26 0;
 #X connect 73 0 74 0;
 #X connect 74 0 72 0;
-#X connect 75 0 76 0;
+#X connect 75 0 77 0;
 #X connect 75 0 73 0;
-#X connect 76 0 26 0;
-#X connect 77 0 35 0;
-#X coords 0 -1 1 1 130 190 2 300 100;
-#X restore 61 201 pd gui;
-#X obj 69 161 hradio 20 1 0 32 empty numberz32 empty 0 -8 0 10 -128992
+#X connect 76 0 35 0;
+#X connect 77 0 26 0;
+#X coords 0 -1 1 1 300 380 2 300 100;
+#X restore 62 353 pd gui;
+#X obj 62 302 hradio 40 1 0 32 nos numberz32 empty 0 -8 0 10 -128992
 -258113 -1 0;
-#X obj 780 102 f \$0;
-#X obj 780 122 list;
-#X obj 780 83 t b a;
-#X obj 780 64 l2s;
-#X msg 781 141 \; \$1-title label \$2;
-#X obj 743 173 f \$0;
-#X msg 743 154 bang;
-#X msg 743 193 \; \$1-title label_font 1 30;
-#X msg 743 226 \; \$1-title vis_size 720 400;
-#X msg 780 44 Markov Drums;
-#X msg 743 299 \; \$1-title label_pos 5 20;
-#X obj 743 21 loadbang;
-#X msg 743 259 \; \$1-title color 11 13;
-#X obj 9 41 onset32_2 rimshot;
-#X obj 9 61 onset32_2 clap;
-#X obj 9 81 onset32_2 ohihat;
-#X obj 9 101 onset32_2 chihat;
-#X obj 9 121 onset32_2 snare;
-#X obj 9 141 onset32_2 kick;
+#X obj 1520 486 f \$0;
+#X obj 1520 506 list;
+#X obj 1520 467 t b a;
+#X obj 1520 448 l2s;
+#X msg 1521 525 \; \$1-title label \$2;
+#X obj 1483 542 f \$0;
+#X msg 1483 523 bang;
+#X msg 1520 428 Markov Drums;
+#X obj 1483 405 loadbang;
+#X msg 1483 643 \; \$1-title color 11 13;
+#X obj 2 62 onset32_2 rimshot;
+#X obj 2 142 onset32_2 clap;
+#X obj 2 102 onset32_2 ohihat;
+#X obj 2 182 onset32_2 chihat;
+#X obj 2 222 onset32_2 snare;
+#X obj 2 262 onset32_2 kick;
+#X msg 1483 577 \; \$1-title label_font 1 60;
+#X msg 1483 610 \; \$1-title vis_size 1440 800;
+#X msg 1483 683 \; \$1-title label_pos 5 30;
+#X obj 796 363 cnv 15 100 25 empty empty density 0 12 1 48 -128992
+-228856 0;
 #X connect 2 0 3 0;
 #X connect 4 0 2 0;
 #X connect 5 0 6 0;
@@ -2670,11 +2674,11 @@ with the density that comes from the slider;
 #X connect 35 0 33 0;
 #X connect 35 1 34 1;
 #X connect 36 0 35 0;
-#X connect 38 0 40 0;
-#X connect 38 0 41 0;
-#X connect 38 0 45 0;
-#X connect 38 0 43 0;
+#X connect 38 0 49 0;
+#X connect 38 0 50 0;
+#X connect 38 0 42 0;
+#X connect 38 0 51 0;
 #X connect 39 0 38 0;
-#X connect 42 0 36 0;
-#X connect 44 0 39 0;
-#X connect 44 0 42 0;
+#X connect 40 0 36 0;
+#X connect 41 0 39 0;
+#X connect 41 0 40 0;
