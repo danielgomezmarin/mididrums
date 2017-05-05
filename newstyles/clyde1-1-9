@@ -1,9 +1,0 @@
-order, 1;
-step, 9;
-aa, ca 1;
-ba, aa 0.5 ca 0.5;
-ea, aa 0.38983 ac 0.0169492 ca 0.440678 ea 0.0338983 ec 0.0169492 ga 0.101695
-;
-fa, aa 0.4 ga 0.6;
-ga, ca 1;
-ja, aa 1;

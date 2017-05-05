@@ -1,6 +1,0 @@
-order, 2;
-step, 4;
-aaaa, ab 0.5 cb 0.5;
-eaaa, eb 0.121212 fb 0.333333 gb 0.545455;
-eaea, fa 0.375 kb 0.625;
-iaaa, ab 0.125 cb 0.8125 kb 0.0625;

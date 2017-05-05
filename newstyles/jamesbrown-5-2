@@ -1,9 +1,0 @@
-order, 5;
-step, 2;
-aaaaaabaaa, aa 0.2 ba 0.2 ea 0.4 ja 0.2;
-aaaaaafaaa, ea 0.333333 ia 0.333333 ja 0.333333;
-aacaaabaaa, aa 1;
-caaaaabaaa, aa 1;
-caaaaacaaa, ba 0.5 ia 0.5;
-caaaaafaaa, fa 0.5 ja 0.5;
-caaaaajaaa, ea 1;

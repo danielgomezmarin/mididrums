@@ -1,9 +1,0 @@
-order, 3;
-step, 0;
-aaaaaa, aa 0.25 ba 0.583333 ea 0.0833333 fa 0.0833333;
-aaeaaa, ea 1;
-aaeaea, ea 0.0952381 fa 0.904762;
-aaiaaa, aa 0.025641 ba 0.717949 fa 0.230769 ja 0.025641;
-eaeaea, ja 1;
-eaiaaa, ba 0.473684 ja 0.526316;
-eanaea, gb 0.923077 ja 0.0769231;

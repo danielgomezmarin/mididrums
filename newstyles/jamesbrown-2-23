@@ -1,9 +1,0 @@
-order, 2;
-step, 23;
-aaaa, aa 0.5 ca 0.5;
-aaca, ca 1;
-aada, aa 1;
-aaea, aa 0.25 ba 0.5 ca 0.25;
-caaa, ba 0.333333 ca 0.666667;
-caba, ba 1;
-caea, ba 0.333333 ca 0.666667;

@@ -1,9 +1,0 @@
-order, 4;
-step, 14;
-aaaaaaaa, ca 1;
-aaaacaaa, aa 1;
-baaaaaaa, ca 1;
-baaacaaa, aa 1;
-baaaeaaa, ca 0.375 ga 0.625;
-eaaacaaa, ea 1;
-faaaeaaa, ga 1;

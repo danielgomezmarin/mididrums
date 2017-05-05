@@ -1,9 +1,0 @@
-order, 1;
-step, 27;
-aa, ba 0.5 ca 0.5;
-ba, aa 1;
-ca, aa 0.75 ba 0.25;
-da, aa 1;
-ea, ca 1;
-fa, aa 1;
-ia, aa 1;

@@ -1,9 +1,0 @@
-order, 1;
-step, 24;
-aa, ba 0.0666667 bb 0.133333 ca 0.0666667 da 0.0666667 fa 0.466667 ga 0.2
-;
-ba, fa 1;
-ea, na 1;
-ga, na 1;
-ja, na 1;
-ma, fa 1;

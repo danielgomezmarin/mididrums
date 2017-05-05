@@ -1,8 +1,0 @@
-order, 3;
-step, 18;
-aaaaaa, ba 1;
-aabaaa, ca 1;
-aababa, aa 1;
-aaeaaa, ba 0.5 da 0.1 fa 0.3 ga 0.1;
-babaaa, fa 1;
-caaaba, ba 1;
